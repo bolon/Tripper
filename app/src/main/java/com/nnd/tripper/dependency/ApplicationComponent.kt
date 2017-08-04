@@ -1,7 +1,7 @@
 package com.nnd.tripper.dependency
 
-import com.nnd.tripper.presenter.MainActivity
-import com.nnd.tripper.presenter.SplashScreenActivity
+import com.nnd.tripper.ui.MainActivity
+import com.nnd.tripper.ui.SplashScreenActivity
 import dagger.Component
 import javax.inject.Singleton
 

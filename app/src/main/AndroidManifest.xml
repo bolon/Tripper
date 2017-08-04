@@ -12,10 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".presenter.MainActivity">
+        <activity android:name=".ui.MainActivity">
         </activity>
         <activity
-            android:name=".presenter.SplashScreenActivity"
+            android:name=".ui.SplashScreenActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

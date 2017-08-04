@@ -1,4 +1,4 @@
-package com.nnd.tripper.presenter
+package com.nnd.tripper.ui
 
 import android.content.Intent
 import android.os.Bundle
