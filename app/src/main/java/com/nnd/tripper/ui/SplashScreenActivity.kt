@@ -27,14 +27,19 @@ class SplashScreenActivity : AppCompatActivity(), AnkoLogger {
                 .subscribe(
                         { obj -> info("yow its working" + obj.data) },
                         { t ->
-                            if (t is HttpException)
-                                info("Resp code : " + t.code())
-                            else
-                                t.printStackTrace()
+                            if (t is HttpException) info("Resp code : " + t.code())
+                            else t.printStackTrace()
+
+                            goNext()
                         },
                         {
+                            goNext()
                             info("done")
-                            startActivity(Intent(applicationContext, MainActivity::class.java))
                         })
+    }
+
+    fun goNext() {
+        startActivity(Intent(applicationContext, MainActivity::class.java))
+        SplashScreenActivity@ this.finish()
     }
 }

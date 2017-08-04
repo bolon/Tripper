@@ -17,7 +17,7 @@ class BaseApp : Application() {
         private fun createComponent(context: Context) {
             component = DaggerApplicationComponent.builder()
                     .networkModule(NetworkModule())
-                    .dataModule(DataModule())
+                    .dataModule(DataModule(context))
                     .build()
         }
 
